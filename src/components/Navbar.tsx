@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
       <div className="container-custom flex items-center justify-between">
         {/* Logo */}
         <a href="#home" className="text-2xl font-bold text-[#4a4e69] dark:text-[#f2e9e4]">
-          {/* Portfolio */}
+          Portfolio
         </a>
 
         {/* Desktop Navigation */}
