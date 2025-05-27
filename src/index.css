@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-[#fafafa] text-[#4a4e69] dark:bg-[#4a4e69] dark:text-[#f2e9e4] font-sans transition-colors duration-300;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+  }
+
+  h1 {
+    @apply text-4xl md:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-5xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-4xl;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 md:px-8 max-w-7xl;
+  }
+
+  .section {
+    @apply py-16 md:py-24;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-medium transition-all duration-300 transform hover:scale-105;
+  }
+
+  .btn-primary {
+    @apply bg-[#4a4e69] hover:bg-[#3e415d] text-[#f2e9e4] shadow-lg hover:shadow-xl;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent border-2 border-[#4a4e69] text-[#4a4e69] hover:bg-[#4a4e69]/10;
+  }
+
+  .card {
+    @apply bg-[#ffffff] dark:bg-[#3e3b50] text-[#4a4e69] dark:text-[#f2e9e4] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300;
+  }
+
+  .input {
+    @apply w-full px-4 py-3 rounded-lg bg-[#ffffff] dark:bg-[#3e3b50] border border-[#d1d1d1] dark:border-[#b0aebe] focus:outline-none focus:ring-2 focus:ring-[#4a4e69] transition-all duration-300;
+  }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.delay-100 {
+  animation-delay: 0.1s;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+.delay-300 {
+  animation-delay: 0.3s;
+}
+
+.delay-400 {
+  animation-delay: 0.4s;
+}
