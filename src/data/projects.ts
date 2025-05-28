@@ -35,10 +35,20 @@ export const projects: Project[] = [
     title: "Tourista App",
     description: "CryptoP2P.ph is the next-generation platform for fast, secure, and borderless peer-to-peer crypto transactions in the Philippines.",
     category: "web",
-    imageUrl: "/",
+    imageUrl: "/tourista.png",
     technologies: ["React JS", "Tailwind", "Python [FastAPI]"],
     liveUrl: "https://cryptop2p.ph"
   },
+  {
+    id: 4,
+    title: "G-Star Carwash",
+    description: "G-Star Carwash is a robust custom system developed for a business client. It integrates inventory management, HR, and information system functionalities.",
+    category: "web",
+    imageUrl: "/gstar.png", // Replace with actual image path
+    technologies: ["PHP", "JavaScript", "jQuery", "AJAX", "Bootstrap", "CSS", "PusherJS"],
+    // liveUrl: "" // Verify if this is the correct URL
+  }
+
   // {
   //   id: 2,
   //   title: "Servicio Mobile",
