@@ -8,18 +8,64 @@ interface SkillCategory {
 
 const skillCategories: SkillCategory[] = [
   {
-    name: 'Frontend Web/Mobile',
-    skills: ['Bootstrap', 'CSS', 'Flutter', 'HTML', 'React JS', 'React Native', 'Redux', 'Tailwind']
+    name: 'Frontend Development',
+    skills: [
+      'AJAX',
+      'Bootstrap',
+      'CSS',
+      'HTML',
+      'JavaScript',
+      'React JS',
+      'Redux',
+      'Tailwind'
+    ]
   },
   {
-    name: 'Backend',
-    skills: ['Laravel', 'PHP', 'Python', 'Strapi V5']
+    name: 'Mobile Development',
+    skills: [
+      'Flutter',
+      'React Native'
+    ]
   },
   {
-    name: 'Tools & Others',
-    skills: ['Docker', 'Git', 'Hostinger', 'Jest']
+    name: 'Backend Development',
+    skills: [
+      'Laravel',
+      'NestJS',
+      'PHP',
+      'Python',
+      'Strapi V5'
+    ]
   },
+  {
+    name: 'Databases & Database Tools',
+    skills: [
+      'DBeaver',
+      'MariaDB',
+      'MySQL',
+      'PostgreSQL',
+      'SQLYog'
+    ]
+  },
+  {
+    name: 'Development Tools & DevOps',
+    skills: [
+      'Docker',
+      'Git',
+      'Hostinger',
+      'Linux OS',
+      'XAMPP'
+    ]
+  },
+  {
+    name: 'Testing',
+    skills: [
+      'Jest'
+    ]
+  }
 ];
+
+
 
 
 const About: React.FC = () => {
