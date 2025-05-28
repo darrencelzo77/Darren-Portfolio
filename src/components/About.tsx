@@ -1,5 +1,7 @@
 import React from 'react';
-import { Code, Star } from 'lucide-react';
+import { Code } from 'lucide-react';
+import { CheckCircle } from 'lucide-react';
+
 
 interface SkillCategory {
   name: string;
@@ -10,14 +12,11 @@ const skillCategories: SkillCategory[] = [
   {
     name: 'Frontend Development',
     skills: [
-      'AJAX',
-      'Bootstrap',
-      'CSS',
-      'HTML',
-      'JavaScript',
-      'React JS',
-      'Redux',
-      'Tailwind'
+      'HTML / CSS / Bootstrap',
+      'React JS / Tailwind',
+      'JavaScript / AJAX',
+      'TypeScript',
+      'Redux'
     ]
   },
   {
@@ -30,10 +29,9 @@ const skillCategories: SkillCategory[] = [
   {
     name: 'Backend Development',
     skills: [
-      'Laravel',
+      'PHP / Laravel',
       'NestJS',
-      'PHP',
-      'Python',
+      'Python / FastAPI',
       'Strapi V5'
     ]
   },
@@ -129,10 +127,13 @@ const About: React.FC = () => {
                 <ul className="space-y-3">
                   {category.skills.map((skill, i) => (
                     <li key={i} className="flex items-center gap-2">
+                      <CheckCircle className="text-[#4a4e69] dark:text-[#f2e9e4]" size={16} />
                       <span>{skill}</span>
                     </li>
                   ))}
                 </ul>
+
+
               </div>
             ))}
           </div>
