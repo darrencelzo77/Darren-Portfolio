@@ -1,5 +1,5 @@
 import React from 'react';
-import { Star } from 'lucide-react';
+import { Code, Star } from 'lucide-react';
 
 interface SkillCategory {
   name: string;
@@ -101,13 +101,13 @@ const About: React.FC = () => {
               I'm a full-stack developer with hands-on experience building modern, scalable web applications that prioritize performance, security, and maintainability.
             </p>
             <p className="mb-6 text-[#4a4e69]/80 dark:text-[#f2e9e4]/80">
-              Though early in my professional journey, I've already contributed to impactful projects across industries like e-commerce and SaaS, bringing a strong backend mindset to every solution.
+              Though early in my professional journey, I've already contributed to impactful projects, consistently bringing a strong backend mindset to every solution.
             </p>
 
             <div className="flex items-center text-[#4a4e69]/90 dark:text-[#f2e9e4]/90 mb-6">
-              <Star className="text-yellow-500 mr-2" size={20} />
+              <Code className="text-yellow-500 mr-2" size={20} />
               <p className="italic">
-                "I believe the best digital products are those that seamlessly blend structure, performance, and user experience."
+                "I strive to build digital solutions where structure, performance, and user experience work in harmony."
               </p>
             </div>
           </div>
