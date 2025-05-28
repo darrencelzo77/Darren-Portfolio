@@ -95,7 +95,7 @@ const About: React.FC = () => {
 
           <div>
             <h3 className="text-xl md:text-2xl font-bold mb-4 text-[#4a4e69] dark:text-[#f2e9e4]">
-              Crafting digital experiences since 2024
+              Building impactful digital solutions since 2024
             </h3>
             <p className="mb-6 text-[#4a4e69]/80 dark:text-[#f2e9e4]/80">
               I'm a full-stack developer with hands-on experience building modern, scalable web applications that prioritize performance, security, and maintainability.
