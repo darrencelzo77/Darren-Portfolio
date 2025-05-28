@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
             <span className="inline-block">Darren Celzo S. Acuña</span>
           </h1>
           <h2 className="text-2xl md:text-3xl text-[#4a4e69]/80 dark:text-[#f2e9e4]/80 font-normal mb-8 animate-fade-in-up delay-200">
-            Back-end Developer
+            Backend Developer
           </h2>
           <p className="text-lg text-[#4a4e69]/70 dark:text-[#f2e9e4]/70 mb-10 animate-fade-in-up delay-300">
             I build efficient management systems and craft dynamic digital experiences that solve real-world problems.
