@@ -57,12 +57,12 @@ const skillCategories: SkillCategory[] = [
       'XAMPP'
     ]
   },
-  {
-    name: 'Testing',
-    skills: [
-      'Jest'
-    ]
-  }
+  // {
+  //   name: 'Testing',
+  //   skills: [
+  //     'Jest'
+  //   ]
+  // }
 ];
 
 
