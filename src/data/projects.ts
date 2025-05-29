@@ -33,7 +33,7 @@ export const projects: Project[] = [
   {
     id: 3,
     title: "Tourista App",
-    description: "Tourista is a modern, intuitive vehicle rental platform that connects travelers with a wide selection of cars and vans for hassle-free bookings. Designed for adventurers and everyday commuters alike, Tourista empowers users to explore destinations with comfort, flexibility, and reliability — all through a seamless, mobile-first experience.",
+    description: "Tourista is a modern, intuitive vehicle rental platform that connects travelers with a wide selection of cars and vans for hassle-free bookings.",
     category: "web",
     imageUrl: "/tourista.png",
     technologies: ["React Vite", "Tailwind", "Python"],
