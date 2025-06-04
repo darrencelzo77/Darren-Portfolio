@@ -10,6 +10,15 @@ interface SkillCategory {
 
 const skillCategories: SkillCategory[] = [
   {
+    name: 'Backend Development',
+    skills: [
+      'PHP / Laravel',
+      'NestJS',
+      'Python / FastAPI',
+      'Strapi V5'
+    ]
+  },
+  {
     name: 'Frontend Development',
     skills: [
       'HTML / CSS / Bootstrap',
@@ -24,15 +33,6 @@ const skillCategories: SkillCategory[] = [
     skills: [
       'Flutter',
       'React Native'
-    ]
-  },
-  {
-    name: 'Backend Development',
-    skills: [
-      'PHP / Laravel',
-      'NestJS',
-      'Python / FastAPI',
-      'Strapi V5'
     ]
   },
   {
