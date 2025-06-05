@@ -28,13 +28,13 @@ const skillCategories: SkillCategory[] = [
       'Redux'
     ]
   },
-  {
-    name: 'Mobile Development',
-    skills: [
-      'Flutter',
-      'React Native'
-    ]
-  },
+  // {
+  //   name: 'Mobile Development',
+  //   skills: [
+  //     'Flutter',
+  //     'React Native'
+  //   ]
+  // },
   {
     name: 'Databases & Database Tools',
     skills: [

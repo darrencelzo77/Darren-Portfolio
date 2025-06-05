@@ -21,24 +21,24 @@ export const projects: Project[] = [
     technologies: ["React Vite", "Strapi", "Third Party KYC"],
     liveUrl: "https://aurum.financial"
   },
-  {
-    id: 2,
-    title: "CryptoP2P (Trading Platform)",
-    description: "CryptoP2P.ph is the next-generation platform for fast, secure, and borderless peer-to-peer crypto transactions in the Philippines.",
-    category: "web",
-    imageUrl: "/cryptop2p.png",
-    technologies: ["React Vite", "Tailwind", "NodeJS"],
-    liveUrl: "https://cryptop2p.ph"
-  },
-  {
-    id: 3,
-    title: "Tourista App",
-    description: "Tourista is a modern, intuitive vehicle rental platform that connects travelers with a wide selection of cars and vans for hassle-free bookings.",
-    category: "web",
-    imageUrl: "/tourista.png",
-    technologies: ["React Vite", "Tailwind", "Python"],
-    // liveUrl: "https://cryptop2p.ph"
-  },
+  // {
+  //   id: 2,
+  //   title: "CryptoP2P (Trading Platform)",
+  //   description: "CryptoP2P.ph is the next-generation platform for fast, secure, and borderless peer-to-peer crypto transactions in the Philippines.",
+  //   category: "web",
+  //   imageUrl: "/cryptop2p.png",
+  //   technologies: ["React Vite", "Tailwind", "NodeJS"],
+  //   liveUrl: "https://cryptop2p.ph"
+  // },
+  // {
+  //   id: 3,
+  //   title: "Tourista App",
+  //   description: "Tourista is a modern, intuitive vehicle rental platform that connects travelers with a wide selection of cars and vans for hassle-free bookings.",
+  //   category: "web",
+  //   imageUrl: "/tourista.png",
+  //   technologies: ["React Vite", "Tailwind", "Python"],
+  //   // liveUrl: "https://cryptop2p.ph"
+  // },
   {
     id: 4,
     title: "G-Star Carwash",
