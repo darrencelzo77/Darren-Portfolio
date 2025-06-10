@@ -18,7 +18,7 @@ export const projects: Project[] = [
     description: "Swap your Quantum Metal Gold Tokens (QMGT) for USDT easily and securely, ensuring transparency, stability, and liquidity in your holdings with each transaction.",
     category: "web",
     imageUrl: "/AUP.png",
-    technologies: ["React Vite", "Strapi", "Third Party KYC"],
+    technologies: ["React JS", "NodeJS", "Third Party KYC"],
     liveUrl: "https://aurum.financial"
   },
   // {
