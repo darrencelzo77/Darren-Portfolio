@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
             </a>
             <a href="/DarrenCelzoAcuna.pdf" className="btn border-t-cyan-50" download>
               <FileText size={18} className="mr-2" />
-              Download Resume
+              Download CV
             </a>
           </div>
         </div>
