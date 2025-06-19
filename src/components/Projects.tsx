@@ -7,7 +7,7 @@ const Projects: React.FC = () => {
     <section id="projects" className="section">
       <div className="container-custom">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="mb-4 text-[#4a4e69] dark:text-[#f2e9e4]">My Projects</h2>
+          <h2 className="mb-4 text-[#4a4e69] dark:text-[#f2e9e4]">Projects</h2>
           <p className="text-xl text-[#4a4e69]/70 dark:text-[#f2e9e4]/70">
             A selection of my recent work and personal projects
           </p>

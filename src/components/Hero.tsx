@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
             Backend Developer
           </h2>
           <p className="text-lg text-[#4a4e69]/70 dark:text-[#f2e9e4]/70 mb-10 animate-fade-in-up delay-300">
-            I build efficient management systems and craft dynamic digital experiences that solve real-world problems.
+            I build efficient backend systems and develop scalable solutions that drive real-world impact and power seamless digital experiences.
           </p>
 
           <div className="flex flex-wrap gap-4 animate-fade-in-up delay-400">

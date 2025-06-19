@@ -1,4 +1,4 @@
-import { Facebook, Menu, Moon, Sun, X } from 'lucide-react';
+import { Facebook, Linkedin, Menu, Moon, Sun, X } from 'lucide-react';
 import React, { useEffect, useState } from 'react';
 import { useTheme } from '../context/ThemeContext';
 
@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
   const navLinks = [
     { name: 'Home', href: '#home' },
     { name: 'About Me', href: '#about' },
-    { name: 'My Projects', href: '#projects' },
+    { name: 'Projects', href: '#projects' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -30,15 +30,19 @@ const Navbar: React.FC = () => {
       href: 'https://www.facebook.com/nerradetsabnaitsabes.1919/',
       icon: <Facebook size={20} />,
     },
+    {
+      name: 'LinkedIn',
+      href: 'www.linkedin.com/in/darren-celzo-acuña-a39082296', // replace with your LinkedIn URL
+      icon: <Linkedin size={20} />,
+    },
   ];
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
-        scrolled
+      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${scrolled
           ? 'bg-[#ffffff] dark:bg-[#4a4e69] shadow-md py-3'
           : 'bg-transparent py-5'
-      }`}
+        }`}
     >
       <div className="container-custom flex items-center justify-between">
         {/* Logo */}
