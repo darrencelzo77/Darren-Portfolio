@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
     },
     {
       name: 'LinkedIn',
-      href: 'www.linkedin.com/in/darren-celzo-acuña-a39082296', // replace with your LinkedIn URL
+      href: 'https://www.linkedin.com/in/darren-celzo-acuña-a39082296/', // replace with your LinkedIn URL
       icon: <Linkedin size={20} />,
     },
   ];
