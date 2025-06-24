@@ -15,7 +15,8 @@ const skillCategories: SkillCategory[] = [
       'PHP / Laravel',
       'NestJS',
       'Python / FastAPI',
-      'Strapi V5'
+      'Strapi V5',
+      'Payload CMS'
     ]
   },
   {
