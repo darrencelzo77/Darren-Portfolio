@@ -53,7 +53,8 @@ const skillCategories: SkillCategory[] = [
       'Git',
       'Hostinger',
       'Linux OS',
-      'XAMPP'
+      'XAMPP',
+      'CI/CD'
     ]
   },
   // {
