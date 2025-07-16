@@ -80,7 +80,7 @@ const About: React.FC = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
+          {/* <div>
             <div className="relative">
               <div className="absolute -inset-4 bg-[#4a4e69]/20 rounded-2xl -z-10 blur-sm"></div>
               <div className="relative h-full overflow-hidden rounded-xl">
@@ -90,6 +90,17 @@ const About: React.FC = () => {
                   className="w-full h-full object-cover rounded-xl shadow-lg"
                 />
               </div>
+            </div>
+          </div> */}
+
+          <div className="relative w-full max-w-sm mx-auto aspect-square">
+            <div className="absolute -inset-4 bg-[#4a4e69]/20 rounded-2xl -z-10 blur-sm"></div>
+            <div className="relative h-full w-full overflow-hidden rounded-xl">
+              <img
+                src="/profile.jpg"
+                alt="Your professional headshot"
+                className="w-full h-full object-cover rounded-xl shadow-lg"
+              />
             </div>
           </div>
 
