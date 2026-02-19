@@ -47,7 +47,17 @@ export const projects: Project[] = [
     imageUrl: "/gstar.png", // Replace with actual image path
     technologies: ["PHP", "JavaScript", "AJAX", "Bootstrap"],
     // liveUrl: "" // Verify if this is the correct URL
+  },
+  {
+    id: 5,
+    title: "ERP System",
+    description: "A customized ERP software designed to streamline HR, transaction processing, and accounting operations for businesses. It integrates core modules to efficiently manage workforce, financials, and daily transactions.",
+    category: "web",
+    imageUrl: "/erp.jpg",
+    technologies: ["PayloadCMS", "React", "Vite", "PostgreSQL", "Alibaba Cloud"],
+    // liveUrl: "" // Verify if this is the correct URL
   }
+
 
 
 ];
