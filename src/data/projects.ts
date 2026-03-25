@@ -19,7 +19,7 @@ export const projects: Project[] = [
     category: "web",
     imageUrl: "/AUP.png",
     technologies: ["React JS", "NodeJS", "Third Party KYC"],
-    liveUrl: "https://aurum.financial"
+    liveUrl: "https://aurumplatform.io/"
   },
   // {
   //   id: 2,
