@@ -26,11 +26,6 @@ const Navbar: React.FC = () => {
 
   const socialLinks = [
     {
-      name: 'Facebook',
-      href: 'https://www.facebook.com/nerradetsabnaitsabes.1919/',
-      icon: <Facebook size={20} />,
-    },
-    {
       name: 'LinkedIn',
       href: 'https://www.linkedin.com/in/darren-celzo-acuña-a39082296/', // replace with your LinkedIn URL
       icon: <Linkedin size={20} />,

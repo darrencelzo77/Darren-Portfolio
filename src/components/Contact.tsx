@@ -9,13 +9,18 @@ const Contact: React.FC = () => {
     },
     {
       title: 'Mobile Number',
-      info: '+639611917651',
+      info: '+639 61 191 7651',
       link: null,
     },
     {
       title: 'Location',
-      info: 'San Miguel, Bulacan 3011, Philippines',
+      info: 'Philippines, Bantog, San Miguel, Bulacan.',
       link: null,
+    },
+    {
+      title: 'LinkedIn',
+      info: 'Darren Acuña',
+      link: 'https://www.linkedin.com/in/darren-celzo-acuña-a39082296/',
     },
   ];
 
