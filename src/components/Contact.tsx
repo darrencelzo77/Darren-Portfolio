@@ -14,7 +14,7 @@ const Contact: React.FC = () => {
     },
     {
       title: 'Location',
-      info: 'Philippines, Bantog, San Miguel, Bulacan.',
+      info: 'Philippines, San Miguel, Bulacan.',
       link: null,
     },
     {
