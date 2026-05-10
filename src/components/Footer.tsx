@@ -5,27 +5,27 @@ const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-8 bg-[#f2e9e4] dark:bg-[#3e3b50]">
+    <footer className="py-10 border-t border-slate-200/80 dark:border-slate-700/70 bg-white/40 dark:bg-slate-900/30 backdrop-blur-sm">
       <div className="container-custom">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
-            <a href="#home" className="text-2xl font-bold text-[#4a4e69] dark:text-[#f2e9e4]">
-              Portfolio
+            <a href="#home" className="text-2xl font-bold text-slate-900 dark:text-slate-100">
+              Darren<span className="text-[#4a4e69] dark:text-[#f2e9e4]"></span>
             </a>
-            <p className="text-[#4a4e69]/70 dark:text-[#f2e9e4]/70 mt-2">
-              Creating exceptional digital experiences.
+            <p className="text-slate-700 dark:text-slate-300 mt-2">
+              Building resilient backend systems and dependable digital platforms.
             </p>
           </div>
           
           <div className="flex flex-col items-center md:items-end">
             <a 
               href="#home"
-              className="mb-4 p-3 bg-[#4a4e69] text-[#f2e9e4] rounded-full shadow-lg hover:bg-[#3e3b50] transition-colors"
+              className="mb-4 p-3 bg-[#4a4e69] text-white rounded-full shadow-lg hover:bg-[#3e3b50] transition-colors"
               aria-label="Back to top"
             >
               <ArrowUp size={20} />
             </a>
-            <p className="text-[#4a4e69]/70 dark:text-[#f2e9e4]/70">
+            <p className="text-slate-700 dark:text-slate-300">
               &copy; {currentYear} Darren Celzo. All rights reserved.
             </p>
           </div>

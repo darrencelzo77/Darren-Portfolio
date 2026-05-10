@@ -6,7 +6,7 @@ export default {
     extend: {
       fontFamily: {
         sans: [
-          'Inter',
+          'Space Grotesk',
           'ui-sans-serif',
           'system-ui',
           '-apple-system',
@@ -17,6 +17,7 @@ export default {
           'Arial',
           'sans-serif',
         ],
+        mono: ['IBM Plex Mono', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'monospace'],
       },
       colors: {
         primary: {

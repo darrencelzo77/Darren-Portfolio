@@ -1,4 +1,5 @@
 import React from 'react';
+import { Mail, MapPin, Phone, Send } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const contactInfo = [
@@ -6,60 +7,83 @@ const Contact: React.FC = () => {
       title: 'Email',
       info: 'darrencelzo77@gmail.com',
       link: 'mailto:darrencelzo77@gmail.com',
+      icon: <Mail size={18} className="text-[#4a4e69] dark:text-[#f2e9e4]" />,
     },
     {
-      title: 'Mobile Number',
+      title: 'Phone',
       info: '+639 61 191 7651',
-      link: null,
+      link: 'tel:+639611917651',
+      icon: <Phone size={18} className="text-[#4a4e69] dark:text-[#f2e9e4]" />,
     },
     {
       title: 'Location',
       info: 'Philippines, San Miguel, Bulacan.',
       link: null,
+      icon: <MapPin size={18} className="text-[#4a4e69] dark:text-[#f2e9e4]" />,
     },
     {
       title: 'LinkedIn',
       info: 'Darren Acuña',
       link: 'https://www.linkedin.com/in/darren-celzo-acuña-a39082296/',
+      icon: <Send size={18} className="text-[#4a4e69] dark:text-[#f2e9e4]" />,
     },
   ];
 
   return (
-    <section id="contact" className="section bg-[#fafafa] dark:bg-[#4a4e69] py-20">
-      <div className="container-custom max-w-4xl mx-auto px-4">
-        {/* Section Header */}
+    <section id="contact" className="section">
+      <div className="container-custom max-w-5xl mx-auto px-4">
         <header className="text-center mb-16">
-          <h2 className="mb-4 text-[#4a4e69] dark:text-[#f2e9e4]">Contact</h2>
-          <p className="text-lg text-[#4a4e69]/70 dark:text-[#f2e9e4]/70">
-            Have a project in mind or just want to connect? Let’s get in touch.
+          <h2 className="section-title mb-4">Let's Build Something Reliable</h2>
+          <p className="section-subtitle">
+            If you need backend development, infrastructure support, or fullstack execution with production discipline,
+            I'm available for collaboration.
           </p>
         </header>
 
-        {/* Contact Details Grid */}
-        <dl className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {contactInfo.map(({ title, info, link }, index) => (
-            <div
-              key={index}
-              className="bg-white dark:bg-[#3e3b50] rounded-lg p-6 shadow hover:shadow-md transition-shadow"
-            >
-              <dt className="text-sm font-semibold text-[#4a4e69] dark:text-[#f2e9e4] mb-2">{title}</dt>
-              <dd className="text-base text-[#4a4e69]/90 dark:text-[#f2e9e4]/90">
-                {link ? (
-                  <a
-                    href={link}
-                    className="hover:underline hover:text-[#3e3b50] dark:hover:text-[#f2e9e4]/80"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {info}
-                  </a>
-                ) : (
-                  info
-                )}
-              </dd>
-            </div>
-          ))}
-        </dl>
+        <div className="grid lg:grid-cols-3 gap-6">
+          <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
+            {contactInfo.map(({ title, info, link, icon }, index) => (
+              <div
+                key={index}
+                className="card rounded-xl p-6"
+              >
+                <div className="flex items-center gap-2 mb-3">
+                  {icon}
+                  <p className="text-sm font-semibold text-slate-900 dark:text-slate-100">{title}</p>
+                </div>
+                <p className="text-base text-slate-700 dark:text-slate-200">
+                  {link ? (
+                    <a
+                      href={link}
+                      className="hover:underline hover:text-[#4a4e69] dark:hover:text-[#f2e9e4]"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {info}
+                    </a>
+                  ) : (
+                    info
+                  )}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <aside className="glass-panel rounded-2xl p-6">
+            <h3 className="text-xl font-bold text-slate-900 dark:text-slate-50 mb-3">Current Availability</h3>
+            <p className="mb-4 text-slate-700 dark:text-slate-300">
+              Open to backend-heavy fullstack roles, contract work, and technical collaborations.
+            </p>
+            <ul className="space-y-3 mb-5">
+              <li className="chip">Backend API Development</li>
+              <li className="chip">Infrastructure and Deployment</li>
+              <li className="chip">Database and System Design</li>
+            </ul>
+            <a href="mailto:darrencelzo77@gmail.com" className="btn btn-primary w-full">
+              Start a Conversation
+            </a>
+          </aside>
+        </div>
       </div>
     </section>
   );
