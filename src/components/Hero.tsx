@@ -1,5 +1,6 @@
 import React from 'react';
-import { CloudCog, Database, FileText, Server } from 'lucide-react';
+// import { CloudCog, Database, FileText, Server } from 'lucide-react';
+import { CloudCog, Database, Server } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
@@ -34,10 +35,10 @@ const Hero: React.FC = () => {
               <a href="#projects" className="btn btn-primary">
                 Explore Projects
               </a>
-              <a href="/DarrenCelzoAcuna.pdf" className="btn btn-secondary" download>
+              {/* <a href="/DarrenCelzoAcuna.pdf" className="btn btn-secondary" download>
                 <FileText size={18} className="mr-2" />
                 Download CV
-              </a>
+              </a> */}
             </div>
           </div>
 
