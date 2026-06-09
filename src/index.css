@@ -118,6 +118,29 @@
   --accent: #d4a843;
 }
 
+/* ===== MINT BREEZE PALETTE ===== */
+[data-palette="mint"] {
+  --bg: #f2faf6;
+  --bg-elevated: #ffffff;
+  --text: #0a1f16;
+  --muted: #3d6b56;
+  --border: #c2e4d4;
+  --brand: #2d8f6f;
+  --brand-strong: #1f6b52;
+  --accent: #7fe5c3;
+}
+
+[data-palette="mint"].dark {
+  --bg: #081a12;
+  --bg-elevated: #0f2a1e;
+  --text: #e8faf2;
+  --muted: #8cc8aa;
+  --border: #1a4032;
+  --brand: #2d8f6f;
+  --brand-strong: #1f6b52;
+  --accent: #7fe5c3;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;

@@ -1,7 +1,7 @@
 import React, { createContext, useState, useEffect, useContext } from 'react';
 
 type Theme = 'light' | 'dark';
-export type PaletteName = 'default' | 'ember' | 'ocean' | 'neon' | 'sage';
+export type PaletteName = 'default' | 'ember' | 'ocean' | 'neon' | 'sage' | 'mint';
 
 export interface PaletteOption {
   name: PaletteName;
@@ -16,6 +16,7 @@ export const PALETTES: PaletteOption[] = [
   { name: 'ocean', label: 'Ocean Depth', brandSwatch: '#1d6b7a', accentSwatch: '#48c9b0' },
   { name: 'neon', label: 'Neon Circuit', brandSwatch: '#6c3ec1', accentSwatch: '#00e5a0' },
   { name: 'sage', label: 'Sage & Stone', brandSwatch: '#4a6741', accentSwatch: '#d4a843' },
+  { name: 'mint', label: 'Mint Breeze', brandSwatch: '#2d8f6f', accentSwatch: '#7fe5c3' },
 ];
 
 interface ThemeContextType {
