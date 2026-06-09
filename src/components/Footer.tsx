@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <a href="#home" className="text-2xl font-bold text-slate-900 dark:text-slate-100">
-              Darren<span className="text-[#4a4e69] dark:text-[#f2e9e4]"></span>
+              Darren<span className="text-brand"></span>
             </a>
             <p className="text-slate-700 dark:text-slate-300 mt-2">
               Building resilient backend systems and dependable digital platforms.
@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
           <div className="flex flex-col items-center md:items-end">
             <a 
               href="#home"
-              className="mb-4 p-3 bg-[#4a4e69] text-white rounded-full shadow-lg hover:bg-[#3e3b50] transition-colors"
+              className="mb-4 p-3 bg-brand text-white rounded-full shadow-lg hover:bg-brand-strong transition-colors"
               aria-label="Back to top"
             >
               <ArrowUp size={20} />

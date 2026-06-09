@@ -5,8 +5,8 @@ import { CloudCog, Database, Server } from 'lucide-react';
 const Hero: React.FC = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-24 pb-12 overflow-hidden">
-      <div className="absolute -top-20 -left-16 h-72 w-72 rounded-full bg-[#4a4e69]/20 blur-3xl ambient-blob"></div>
-      <div className="absolute top-40 -right-12 h-64 w-64 rounded-full bg-[#c9ada7]/30 blur-3xl ambient-blob"></div>
+      <div className="absolute -top-20 -left-16 h-72 w-72 rounded-full bg-brand-fade blur-3xl ambient-blob"></div>
+      <div className="absolute top-40 -right-12 h-64 w-64 rounded-full bg-accent-fade blur-3xl ambient-blob"></div>
 
       <div className="absolute inset-0 -z-10 opacity-70 dark:opacity-50">
         <div className="absolute inset-0 bg-[linear-gradient(rgba(15,23,42,0.06)_1px,transparent_1px),linear-gradient(90deg,rgba(15,23,42,0.06)_1px,transparent_1px)] bg-[size:28px_28px]"></div>
@@ -46,21 +46,21 @@ const Hero: React.FC = () => {
             <p className="text-sm uppercase tracking-widest text-slate-700 dark:text-slate-300 mb-4">Engineering Focus</p>
             <div className="space-y-4">
               <div className="metric flex items-center gap-3">
-                <Server className="text-[#4a4e69] dark:text-[#f2e9e4]" size={18} />
+                <Server className="text-brand" size={18} />
                 <div>
                   <p className="text-sm text-slate-700 dark:text-slate-300">Backend Services</p>
                   <p className="font-semibold text-slate-900 dark:text-slate-50">Node, Laravel, FastAPI, NestJS</p>
                 </div>
               </div>
               <div className="metric flex items-center gap-3">
-                <Database className="text-[#4a4e69] dark:text-[#f2e9e4]" size={18} />
+                <Database className="text-brand" size={18} />
                 <div>
                   <p className="text-sm text-slate-700 dark:text-slate-300">Data Layer</p>
                   <p className="font-semibold text-slate-900 dark:text-slate-50">PostgreSQL, MySQL, MariaDB</p>
                 </div>
               </div>
               <div className="metric flex items-center gap-3">
-                <CloudCog className="text-[#4a4e69] dark:text-[#f2e9e4]" size={18} />
+                <CloudCog className="text-brand" size={18} />
                 <div>
                   <p className="text-sm text-slate-700 dark:text-slate-300">Infrastructure</p>
                   <p className="font-semibold text-slate-900 dark:text-slate-50">Docker, Linux, cloud-hosted pipelines</p>

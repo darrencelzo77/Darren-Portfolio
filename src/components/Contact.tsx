@@ -7,25 +7,25 @@ const Contact: React.FC = () => {
       title: 'Email',
       info: 'darrencelzo77@gmail.com',
       link: 'mailto:darrencelzo77@gmail.com',
-      icon: <Mail size={18} className="text-[#4a4e69] dark:text-[#f2e9e4]" />,
+      icon: <Mail size={18} className="text-brand" />,
     },
     {
       title: 'Phone',
       info: '+639 61 191 7651',
       link: 'tel:+639611917651',
-      icon: <Phone size={18} className="text-[#4a4e69] dark:text-[#f2e9e4]" />,
+      icon: <Phone size={18} className="text-brand" />,
     },
     {
       title: 'Location',
       info: 'Philippines, San Miguel, Bulacan.',
       link: null,
-      icon: <MapPin size={18} className="text-[#4a4e69] dark:text-[#f2e9e4]" />,
+      icon: <MapPin size={18} className="text-brand" />,
     },
     {
       title: 'LinkedIn',
       info: 'Darren Acuña',
       link: 'https://www.linkedin.com/in/darren-celzo-acuña-a39082296/',
-      icon: <Send size={18} className="text-[#4a4e69] dark:text-[#f2e9e4]" />,
+      icon: <Send size={18} className="text-brand" />,
     },
   ];
 
@@ -55,7 +55,7 @@ const Contact: React.FC = () => {
                   {link ? (
                     <a
                       href={link}
-                      className="hover:underline hover:text-[#4a4e69] dark:hover:text-[#f2e9e4]"
+                      className="hover:underline hover:text-brand"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

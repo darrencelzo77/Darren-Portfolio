@@ -11,7 +11,7 @@ interface SkillCategory {
 const skillCategories: SkillCategory[] = [
   {
     name: 'Backend Development',
-    icon: <Code size={18} className="text-[#4a4e69] dark:text-[#f2e9e4]" />,
+    icon: <Code size={18} className="text-brand" />,
     skills: [
       'PHP / Laravel',
       'NestJS',
@@ -22,7 +22,7 @@ const skillCategories: SkillCategory[] = [
   },
   {
     name: 'Frontend Development',
-    icon: <Code size={18} className="text-[#4a4e69] dark:text-[#f2e9e4]" />,
+    icon: <Code size={18} className="text-brand" />,
     skills: [
       'HTML / CSS / Bootstrap',
       'React JS / Tailwind',
@@ -33,7 +33,7 @@ const skillCategories: SkillCategory[] = [
   },
   {
     name: 'Databases & Database Tools',
-    icon: <Database size={18} className="text-[#4a4e69] dark:text-[#f2e9e4]" />,
+    icon: <Database size={18} className="text-brand" />,
     skills: [
       'DBeaver',
       'MariaDB',
@@ -44,7 +44,7 @@ const skillCategories: SkillCategory[] = [
   },
   {
     name: 'Development Tools & DevOps',
-    icon: <Cloud size={18} className="text-[#4a4e69] dark:text-[#f2e9e4]" />,
+    icon: <Cloud size={18} className="text-brand" />,
     skills: [
       'Docker',
       'Git',
@@ -56,7 +56,7 @@ const skillCategories: SkillCategory[] = [
   },
   {
     name: 'Security & Reliability',
-    icon: <ShieldCheck size={18} className="text-[#4a4e69] dark:text-[#f2e9e4]" />,
+    icon: <ShieldCheck size={18} className="text-brand" />,
     skills: [
       'Authentication & access control',
       'Input validation',
@@ -92,7 +92,7 @@ const About: React.FC = () => {
             onContextMenu={preventImageActions}
             onDragStart={preventImageActions}
           >
-            <div className="absolute -inset-4 bg-[#4a4e69]/25 rounded-2xl -z-10 blur-sm"></div>
+            <div className="absolute -inset-4 bg-brand-glow rounded-2xl -z-10 blur-sm"></div>
             <div className="relative h-full w-full overflow-hidden rounded-xl">
               <img
                 src="/profile.jpg"
@@ -127,15 +127,15 @@ const About: React.FC = () => {
 
             <ul className="space-y-3">
               <li className="flex items-center gap-3">
-                <CheckCircle size={16} className="text-[#4a4e69] dark:text-[#f2e9e4]" />
+                <CheckCircle size={16} className="text-brand" />
                 <span className="text-slate-800 dark:text-slate-100">API and service design for scalable business logic</span>
               </li>
               <li className="flex items-center gap-3">
-                <CheckCircle size={16} className="text-[#4a4e69] dark:text-[#f2e9e4]" />
+                <CheckCircle size={16} className="text-brand" />
                 <span className="text-slate-800 dark:text-slate-100">Database architecture and query optimization</span>
               </li>
               <li className="flex items-center gap-3">
-                <CheckCircle size={16} className="text-[#4a4e69] dark:text-[#f2e9e4]" />
+                <CheckCircle size={16} className="text-brand" />
                 <span className="text-slate-800 dark:text-slate-100">Infrastructure-conscious delivery with Docker and Linux</span>
               </li>
             </ul>
@@ -158,7 +158,7 @@ const About: React.FC = () => {
                 <ul className="space-y-3">
                   {category.skills.map((skill, i) => (
                     <li key={i} className="flex items-center gap-2">
-                      <CheckCircle className="text-[#4a4e69] dark:text-[#f2e9e4]" size={16} />
+                      <CheckCircle className="text-brand" size={16} />
                       <span className="text-slate-700 dark:text-slate-200">{skill}</span>
                     </li>
                   ))}

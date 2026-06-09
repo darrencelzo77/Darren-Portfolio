@@ -72,7 +72,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
 
         <div className="mb-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50/70 dark:bg-slate-800/40 p-3">
           <p className="text-sm font-semibold text-slate-900 dark:text-slate-100 flex items-center gap-2 mb-1">
-            <Layers size={15} className="text-[#4a4e69] dark:text-[#f2e9e4]" />
+            <Layers size={15} className="text-brand" />
             {project.role}
           </p>
           <p className="text-sm text-slate-700 dark:text-slate-300">{project.impact}</p>
@@ -82,7 +82,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
           {project.technologies.map((tech, index) => (
             <span
               key={index}
-              className="text-xs font-medium px-2 py-1 bg-[#f2e9e4] dark:bg-[#4a4e69]/60 text-[#4a4e69] dark:text-[#f2e9e4] rounded-full border border-[#c9ada7]/70 dark:border-[#b0aebe]/60"
+              className="tech-chip"
             >
               {tech}
             </span>

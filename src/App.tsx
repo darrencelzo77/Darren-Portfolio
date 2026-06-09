@@ -27,7 +27,7 @@ function App() {
       <div className="relative">
         {/* Progress bar */}
         <div
-          className="fixed top-0 left-0 h-1 bg-[#4a4e69] dark:bg-[#f2e9e4] z-50 transition-all duration-200 ease-out"
+          className="fixed top-0 left-0 h-1 bg-brand dark:bg-accent z-50 transition-all duration-200 ease-out"
           style={{ width: `${scrollProgress}%` }}
         ></div>
 

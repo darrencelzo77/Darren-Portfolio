@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* ===== DEFAULT (Classic) PALETTE ===== */
+:root,
+[data-palette="default"] {
   --bg: #f4f7fb;
   --bg-elevated: #ffffff;
   --text: #0f1f2e;
@@ -13,7 +15,7 @@
   --accent: #c9ada7;
 }
 
-.dark {
+[data-palette="default"].dark {
   --bg: #07131d;
   --bg-elevated: #112536;
   --text: #eff7ff;
@@ -22,6 +24,98 @@
   --brand: #4a4e69;
   --brand-strong: #3e3b50;
   --accent: #c9ada7;
+}
+
+/* ===== MIDNIGHT EMBER PALETTE ===== */
+[data-palette="ember"] {
+  --bg: #faf6f1;
+  --bg-elevated: #ffffff;
+  --text: #1a1410;
+  --muted: #6b5c4f;
+  --border: #e0d5c8;
+  --brand: #5c4a3a;
+  --brand-strong: #4a3828;
+  --accent: #e07a5f;
+}
+
+[data-palette="ember"].dark {
+  --bg: #1a1410;
+  --bg-elevated: #2a2018;
+  --text: #fdf6ee;
+  --muted: #c4b5a5;
+  --border: #3d3020;
+  --brand: #5c4a3a;
+  --brand-strong: #4a3828;
+  --accent: #e07a5f;
+}
+
+/* ===== OCEAN DEPTH PALETTE ===== */
+[data-palette="ocean"] {
+  --bg: #f0f7fa;
+  --bg-elevated: #ffffff;
+  --text: #0a1a24;
+  --muted: #4a6878;
+  --border: #c4dde8;
+  --brand: #1d6b7a;
+  --brand-strong: #145566;
+  --accent: #48c9b0;
+}
+
+[data-palette="ocean"].dark {
+  --bg: #0a1a24;
+  --bg-elevated: #122a38;
+  --text: #e8f4f8;
+  --muted: #8fb0c0;
+  --border: #1e4055;
+  --brand: #1d6b7a;
+  --brand-strong: #145566;
+  --accent: #48c9b0;
+}
+
+/* ===== NEON CIRCUIT PALETTE ===== */
+[data-palette="neon"] {
+  --bg: #f5f3ff;
+  --bg-elevated: #ffffff;
+  --text: #0d0b16;
+  --muted: #5a5578;
+  --border: #d8d2f0;
+  --brand: #6c3ec1;
+  --brand-strong: #5530a0;
+  --accent: #00e5a0;
+}
+
+[data-palette="neon"].dark {
+  --bg: #0d0b16;
+  --bg-elevated: #16122a;
+  --text: #f0ecff;
+  --muted: #9e98c0;
+  --border: #2a2550;
+  --brand: #6c3ec1;
+  --brand-strong: #5530a0;
+  --accent: #00e5a0;
+}
+
+/* ===== SAGE & STONE PALETTE ===== */
+[data-palette="sage"] {
+  --bg: #f4f7f2;
+  --bg-elevated: #ffffff;
+  --text: #0e140d;
+  --muted: #546850;
+  --border: #c8d8c4;
+  --brand: #4a6741;
+  --brand-strong: #3a5232;
+  --accent: #d4a843;
+}
+
+[data-palette="sage"].dark {
+  --bg: #0e140d;
+  --bg-elevated: #1a2418;
+  --text: #edf5eb;
+  --muted: #a0b89a;
+  --border: #2c3e28;
+  --brand: #4a6741;
+  --brand-strong: #3a5232;
+  --accent: #d4a843;
 }
 
 @layer base {
@@ -81,7 +175,7 @@
   .btn-primary {
     background: linear-gradient(135deg, var(--brand) 0%, var(--brand-strong) 100%);
     color: #f8fffe;
-    box-shadow: 0 10px 24px rgba(62, 59, 80, 0.3);
+    box-shadow: 0 10px 24px color-mix(in srgb, var(--brand-strong) 30%, transparent);
   }
 
   .dark .btn-primary {
@@ -90,7 +184,7 @@
 
   .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 14px 30px rgba(62, 59, 80, 0.35);
+    box-shadow: 0 14px 30px color-mix(in srgb, var(--brand-strong) 35%, transparent);
   }
 
   .btn-secondary {
@@ -141,6 +235,58 @@
     @apply rounded-xl p-4;
     border: 1px solid var(--border);
     background: color-mix(in srgb, var(--bg-elevated) 92%, transparent);
+  }
+
+  /* Palette-aware utility classes */
+  .text-brand {
+    color: var(--brand);
+  }
+
+  .dark .text-brand-dark,
+  .text-brand-dark {
+    color: var(--brand);
+  }
+
+  .bg-brand {
+    background-color: var(--brand);
+  }
+
+  .bg-brand-strong {
+    background-color: var(--brand-strong);
+  }
+
+  .bg-brand-fade {
+    background-color: color-mix(in srgb, var(--brand) 20%, transparent);
+  }
+
+  .bg-accent-fade {
+    background-color: color-mix(in srgb, var(--accent) 30%, transparent);
+  }
+
+  .bg-brand-glow {
+    background-color: color-mix(in srgb, var(--brand) 25%, transparent);
+  }
+
+  .hover\:bg-brand-strong:hover {
+    background-color: var(--brand-strong);
+  }
+
+  .hover\:text-brand:hover {
+    color: var(--brand);
+  }
+
+  .text-accent {
+    color: var(--accent);
+  }
+
+  .tech-chip {
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+    background: color-mix(in srgb, var(--accent) 20%, var(--bg-elevated));
+    color: var(--brand);
+    border: 1px solid color-mix(in srgb, var(--accent) 50%, var(--border));
   }
 }
 

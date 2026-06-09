@@ -21,14 +21,14 @@ export default {
       },
       colors: {
         primary: {
-          DEFAULT: '#4a4e69',
-          light: '#5c6080',
-          dark: '#3e3b50',
+          DEFAULT: 'var(--brand)',
+          light: 'var(--brand)',
+          dark: 'var(--brand-strong)',
         },
         secondary: {
-          DEFAULT: '#f2e9e4',
-          light: '#faf7f5',
-          dark: '#e0d7d2',
+          DEFAULT: 'var(--accent)',
+          light: 'var(--bg-elevated)',
+          dark: 'var(--border)',
         },
       },
     },
