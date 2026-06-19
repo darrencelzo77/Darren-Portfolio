@@ -107,7 +107,7 @@ const About: React.FC = () => {
 
           <div>
             <h3 className="text-2xl md:text-3xl font-bold mb-4 text-slate-900 dark:text-slate-50">
-              Fullstack delivery with backend-first architectureS
+              Fullstack delivery with backend-first architecture
             </h3>
             <p className="mb-6">
               I design and build applications end to end, but my strongest edge is backend and infrastructure.
