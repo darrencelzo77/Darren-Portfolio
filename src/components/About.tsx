@@ -1,5 +1,31 @@
 import React from 'react';
-import { CheckCircle, Cloud, Code, Database, ShieldCheck } from 'lucide-react';
+import { CheckCircle, Cloud, Code, Database, GitBranch, ShieldCheck } from 'lucide-react';
+import {
+  SiBootstrap,
+  SiCss,
+  SiDbeaver,
+  SiDocker,
+  SiFastapi,
+  SiGit,
+  SiHostinger,
+  SiHtml5,
+  SiJavascript,
+  SiLaravel,
+  SiLinux,
+  SiMariadb,
+  SiMysql,
+  SiNestjs,
+  SiPayloadcms,
+  SiPhp,
+  SiPostgresql,
+  SiPython,
+  SiReact,
+  SiRedux,
+  SiStrapi,
+  SiTailwindcss,
+  SiTypescript,
+  SiXampp
+} from 'react-icons/si';
 
 
 interface SkillCategory {
@@ -66,6 +92,32 @@ const skillCategories: SkillCategory[] = [
     ]
   }
 ];
+
+const logoClassName = 'shrink-0 text-xl text-[#4a4e69] dark:text-[#f2e9e4]';
+
+const skillLogos: Record<string, React.ReactNode> = {
+  'PHP / Laravel': <><SiPhp /><SiLaravel /></>,
+  NestJS: <SiNestjs />,
+  'Python / FastAPI': <><SiPython /><SiFastapi /></>,
+  'Strapi V5': <SiStrapi />,
+  'Payload CMS': <SiPayloadcms />,
+  'HTML / CSS / Bootstrap': <><SiHtml5 /><SiCss /><SiBootstrap /></>,
+  'React JS / Tailwind': <><SiReact /><SiTailwindcss /></>,
+  'JavaScript / AJAX': <SiJavascript />,
+  TypeScript: <SiTypescript />,
+  Redux: <SiRedux />,
+  DBeaver: <SiDbeaver />,
+  MariaDB: <SiMariadb />,
+  MySQL: <SiMysql />,
+  PostgreSQL: <SiPostgresql />,
+  SQLYog: <Database size={18} />,
+  Docker: <SiDocker />,
+  Git: <SiGit />,
+  Hostinger: <SiHostinger />,
+  'Linux OS': <SiLinux />,
+  XAMPP: <SiXampp />,
+  'CI/CD': <GitBranch size={18} />
+};
 
 
 
@@ -158,7 +210,9 @@ const About: React.FC = () => {
                 <ul className="space-y-3">
                   {category.skills.map((skill, i) => (
                     <li key={i} className="flex items-center gap-2">
-                      <CheckCircle className="text-[#4a4e69] dark:text-[#f2e9e4]" size={16} />
+                      <span className={`${logoClassName} flex min-w-5 items-center gap-1`} aria-hidden="true">
+                        {skillLogos[skill] ?? <CheckCircle size={16} />}
+                      </span>
                       <span className="text-slate-700 dark:text-slate-200">{skill}</span>
                     </li>
                   ))}
