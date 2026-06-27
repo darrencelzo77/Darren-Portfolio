@@ -31,7 +31,7 @@ const Contact: React.FC = () => {
 
   return (
     <section id="contact" className="section">
-      <div className="container-custom max-w-5xl mx-auto px-4">
+      <div className="container-custom">
         <header className="text-center mb-16">
           <h2 className="section-title mb-4">Contact</h2>
           <p className="section-subtitle">
@@ -39,7 +39,7 @@ const Contact: React.FC = () => {
           </p>
         </header>
 
-        <div className="grid lg:grid-cols-3 gap-6">
+        <div className="grid lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
             {contactInfo.map(({ title, info, link, icon }, index) => (
               <div key={index} className="card rounded-xl p-6">
