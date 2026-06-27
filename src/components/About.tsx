@@ -123,10 +123,6 @@ const skillLogos: Record<string, React.ReactNode> = {
 
 
 const About: React.FC = () => {
-  const preventImageActions = (event: React.SyntheticEvent) => {
-    event.preventDefault();
-  };
-
   return (
     <section id="about" className="section">
       <div className="container-custom">
@@ -138,25 +134,7 @@ const About: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div
-            className="relative w-full max-w-xs mx-auto aspect-square select-none"
-            onContextMenu={preventImageActions}
-            onDragStart={preventImageActions}
-          >
-            <div className="absolute -inset-4 bg-[#4a4e69]/25 rounded-2xl -z-10 blur-sm"></div>
-            <div className="relative h-full w-full overflow-hidden rounded-xl">
-              <img
-                src="/profile.jpg"
-                alt="Darren Acuña profile"
-                className="w-full h-full object-cover rounded-xl shadow-lg"
-                draggable={false}
-                onContextMenu={preventImageActions}
-                onDragStart={preventImageActions}
-              />
-            </div>
-          </div>
-
+        <div className="max-w-3xl mx-auto">
           <div>
             <h3 className="text-2xl md:text-3xl font-bold mb-4 text-slate-900 dark:text-slate-50">
               Fullstack delivery with backend-first architecture
