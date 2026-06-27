@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Menu, Moon, Sun, X } from 'lucide-react';
+import { Linkedin, Mail, Menu, Moon, Sun, X } from 'lucide-react';
 import React, { useEffect, useState } from 'react';
 import { useTheme } from '../context/ThemeContext';
 
@@ -30,11 +30,11 @@ const Navbar: React.FC = () => {
       href: 'https://www.linkedin.com/in/darren-celzo-acuña-a39082296/',
       icon: <Linkedin size={20} />,
     },
-    {
-      name: 'GitHub',
-      href: 'https://github.com',
-      icon: <Github size={20} />,
-    },
+    // {
+    //   name: 'GitHub',
+    //   href: 'https://github.com',
+    //   icon: <Github size={20} />,
+    // },
     {
       name: 'Email',
       href: 'mailto:darrencelzo77@gmail.com',
@@ -45,8 +45,8 @@ const Navbar: React.FC = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${scrolled
-          ? 'glass-panel shadow-lg py-3'
-          : 'bg-transparent py-5'
+        ? 'glass-panel shadow-lg py-3'
+        : 'bg-transparent py-5'
         }`}
     >
       <div className="container-custom flex items-center justify-between">
