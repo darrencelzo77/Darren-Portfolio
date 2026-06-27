@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
 
   const navLinks = [
     { name: 'Home', href: '#home' },
-    { name: 'About Me', href: '#about' },
+    { name: 'About', href: '#about' },
     { name: 'Projects', href: '#projects' },
     { name: 'Contact', href: '#contact' },
   ];
@@ -30,11 +30,6 @@ const Navbar: React.FC = () => {
       href: 'https://www.linkedin.com/in/darren-celzo-acuña-a39082296/',
       icon: <Linkedin size={20} />,
     },
-    // {
-    //   name: 'GitHub',
-    //   href: 'https://github.com',
-    //   icon: <Github size={20} />,
-    // },
     {
       name: 'Email',
       href: 'mailto:darrencelzo77@gmail.com',

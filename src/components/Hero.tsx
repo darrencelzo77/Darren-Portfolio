@@ -15,20 +15,20 @@ const Hero: React.FC = () => {
       <div className="container-custom">
         <div className="grid lg:grid-cols-5 gap-10 items-center">
           <div className="lg:col-span-3">
-            <span className="chip animate-rise">Fullstack Developer • Backend & Infra Specialist</span>
+            <span className="chip animate-rise">Fullstack Developer | Backend & Infrastructure</span>
             <h1 className="mt-5 mb-5 text-slate-900 dark:text-slate-50 animate-rise delay-100">
-              I engineer reliable systems, not just pages.
+              Building reliable web systems.
             </h1>
             <p className="text-lg md:text-xl mb-8 animate-rise delay-200">
-              I'm Darren Acuña, a fullstack developer focused on backend architecture, cloud deployment, and production-grade APIs.
-              I care about performance, security, observability, and smooth delivery pipelines.
+              I'm Darren Acuña, a fullstack developer focused on backend architecture,
+              production APIs, and clean delivery workflows.
             </p>
 
             <div className="flex flex-wrap gap-3 mb-10 animate-rise delay-300">
               <span className="chip">API Design</span>
               <span className="chip">Database Modeling</span>
               <span className="chip">CI/CD</span>
-              <span className="chip">Containerized Deployments</span>
+              <span className="chip">Docker</span>
             </div>
 
             <div className="flex flex-wrap gap-4 animate-rise delay-400">
@@ -43,13 +43,13 @@ const Hero: React.FC = () => {
           </div>
 
           <div className="lg:col-span-2 glass-panel rounded-2xl p-6 md:p-8 animate-rise delay-300">
-            <p className="text-sm uppercase tracking-widest text-slate-700 dark:text-slate-300 mb-4">Engineering Focus</p>
+            <p className="text-sm uppercase tracking-widest text-slate-700 dark:text-slate-300 mb-4">Core Focus</p>
             <div className="space-y-4">
               <div className="metric flex items-center gap-3">
                 <Server className="text-[#4a4e69] dark:text-[#f2e9e4]" size={18} />
                 <div>
                   <p className="text-sm text-slate-700 dark:text-slate-300">Backend Services</p>
-                  <p className="font-semibold text-slate-900 dark:text-slate-50">Node, Laravel, FastAPI, NestJS</p>
+                  <p className="font-semibold text-slate-900 dark:text-slate-50">Laravel, FastAPI, NestJS</p>
                 </div>
               </div>
               <div className="metric flex items-center gap-3">
@@ -63,7 +63,7 @@ const Hero: React.FC = () => {
                 <CloudCog className="text-[#4a4e69] dark:text-[#f2e9e4]" size={18} />
                 <div>
                   <p className="text-sm text-slate-700 dark:text-slate-300">Infrastructure</p>
-                  <p className="font-semibold text-slate-900 dark:text-slate-50">Docker, Linux, cloud-hosted pipelines</p>
+                  <p className="font-semibold text-slate-900 dark:text-slate-50">Docker, Linux, CI/CD</p>
                 </div>
               </div>
             </div>

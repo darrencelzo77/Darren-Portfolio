@@ -7,9 +7,9 @@ const Projects: React.FC = () => {
     <section id="projects" className="section">
       <div className="container-custom">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="section-title mb-4">Selected Builds</h2>
+          <h2 className="section-title mb-4">Projects</h2>
           <p className="section-subtitle">
-            Systems and products where I contributed heavily on backend architecture, integrations, and infrastructure-aware delivery.
+            Selected work across backend systems, integrations, and fullstack delivery.
           </p>
         </div>
 
@@ -68,7 +68,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
       </div>
       <div className="p-6 flex-1 flex flex-col">
         <h3 className="text-xl font-bold mb-2 text-slate-900 dark:text-slate-50">{project.title}</h3>
-        <p className="mb-4">{project.description}</p>
+        <p className="mb-4 text-sm">{project.description}</p>
 
         <div className="mb-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50/70 dark:bg-slate-800/40 p-3">
           <p className="text-sm font-semibold text-slate-900 dark:text-slate-100 flex items-center gap-2 mb-1">
