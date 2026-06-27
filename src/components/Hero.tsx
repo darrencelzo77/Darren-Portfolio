@@ -1,6 +1,6 @@
 import React from 'react';
 // import { CloudCog, Database, FileText, Server } from 'lucide-react';
-import { CloudCog, Database, Server } from 'lucide-react';
+import { CheckCircle, CloudCog, Database, Server } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
@@ -23,6 +23,21 @@ const Hero: React.FC = () => {
               I'm Darren Acuña, a fullstack developer focused on backend architecture,
               production APIs, and clean delivery workflows.
             </p>
+
+            <ul className="grid sm:grid-cols-3 gap-3 mb-8 animate-rise delay-300">
+              <li className="metric flex items-center gap-2">
+                <CheckCircle size={16} className="text-[#4a4e69] dark:text-[#f2e9e4]" />
+                <span className="text-sm font-semibold text-slate-900 dark:text-slate-50">Secure APIs</span>
+              </li>
+              <li className="metric flex items-center gap-2">
+                <CheckCircle size={16} className="text-[#4a4e69] dark:text-[#f2e9e4]" />
+                <span className="text-sm font-semibold text-slate-900 dark:text-slate-50">Clean data models</span>
+              </li>
+              <li className="metric flex items-center gap-2">
+                <CheckCircle size={16} className="text-[#4a4e69] dark:text-[#f2e9e4]" />
+                <span className="text-sm font-semibold text-slate-900 dark:text-slate-50">Reliable releases</span>
+              </li>
+            </ul>
 
             <div className="flex flex-wrap gap-3 mb-10 animate-rise delay-300">
               <span className="chip">API Design</span>
@@ -49,7 +64,7 @@ const Hero: React.FC = () => {
                 <Server className="text-[#4a4e69] dark:text-[#f2e9e4]" size={18} />
                 <div>
                   <p className="text-sm text-slate-700 dark:text-slate-300">Backend Services</p>
-                  <p className="font-semibold text-slate-900 dark:text-slate-50">Laravel, FastAPI, NestJS</p>
+                  <p className="font-semibold text-slate-900 dark:text-slate-50">Laravel, NestJS, FastAPI</p>
                 </div>
               </div>
               <div className="metric flex items-center gap-3">
@@ -66,6 +81,9 @@ const Hero: React.FC = () => {
                   <p className="font-semibold text-slate-900 dark:text-slate-50">Docker, Linux, CI/CD</p>
                 </div>
               </div>
+              <p className="text-sm text-slate-700 dark:text-slate-300">
+                Backend-first delivery for maintainable products and production-ready workflows.
+              </p>
             </div>
           </div>
         </div>
