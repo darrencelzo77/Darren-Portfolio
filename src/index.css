@@ -142,6 +142,33 @@
     border: 1px solid var(--border);
     background: color-mix(in srgb, var(--bg-elevated) 92%, transparent);
   }
+
+  .hero-console {
+    background:
+      linear-gradient(145deg, color-mix(in srgb, var(--bg-elevated) 92%, transparent), color-mix(in srgb, var(--bg-elevated) 72%, transparent)),
+      linear-gradient(135deg, rgba(74, 78, 105, 0.16), rgba(201, 173, 167, 0.12));
+    border: 1px solid color-mix(in srgb, var(--border) 82%, transparent);
+    box-shadow: 0 24px 70px rgba(8, 20, 34, 0.16);
+    backdrop-filter: blur(14px);
+  }
+
+  .hero-flow-row {
+    @apply flex items-center gap-3 rounded-xl p-4 transition-all duration-300;
+    border: 1px solid color-mix(in srgb, var(--border) 88%, transparent);
+    background: color-mix(in srgb, var(--bg-elevated) 78%, transparent);
+  }
+
+  .hero-flow-row:hover {
+    transform: translateX(4px);
+    border-color: color-mix(in srgb, var(--brand) 42%, var(--border));
+  }
+
+  .hero-signal {
+    @apply flex min-h-12 items-center gap-2 rounded-xl px-3 py-2 text-sm font-semibold;
+    color: var(--text);
+    border: 1px solid color-mix(in srgb, var(--border) 84%, transparent);
+    background: color-mix(in srgb, var(--bg-elevated) 82%, transparent);
+  }
 }
 
 @keyframes riseIn {
